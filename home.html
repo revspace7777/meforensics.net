@@ -39,13 +39,23 @@
                         SERVICES</span>
                 </a>
 
-                <nav class="nav">
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Mobile Overlay -->
+                <div class="mobile-overlay" id="mobileOverlay"></div>
+
+                <nav class="nav" id="mainNav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="/" class="nav__link nav__link--active">Home</a>
+                            <a href="home.html" class="nav__link nav__link--active">Home</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">
+                            <a href="#" class="nav__link nav__link--dropdown">
                                 Services
                                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2">
@@ -66,7 +76,7 @@
                             </div>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">
+                            <a href="#" class="nav__link nav__link--dropdown">
                                 Locations
                                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2">
@@ -81,7 +91,7 @@
                             </div>
                         </li>
                         <li class="nav__item">
-                            <a href="resources/" class="nav__link">Resources</a>
+                            <a href="resources/legal-compliance/sb4d-guide.html" class="nav__link">Resources</a>
                         </li>
                         <li class="nav__item">
                             <a href="about.html" class="nav__link">About</a>
@@ -642,6 +652,43 @@
                 header.classList.add('header--scrolled');
             } else {
                 header.classList.remove('header--scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mainNav = document.getElementById('mainNav');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+
+        function toggleMobileMenu() {
+            mobileMenuToggle.classList.toggle('active');
+            mainNav.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+            document.body.style.overflow = mainNav.classList.contains('active') ? 'hidden' : '';
+        }
+
+        mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+        mobileOverlay.addEventListener('click', toggleMobileMenu);
+
+        // Mobile dropdown toggles
+        const dropdownLinks = document.querySelectorAll('.nav__link--dropdown');
+        dropdownLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    const parent = link.parentElement;
+                    parent.classList.toggle('dropdown-open');
+                }
+            });
+        });
+
+        // Close mobile menu on window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                mobileMenuToggle.classList.remove('active');
+                mainNav.classList.remove('active');
+                mobileOverlay.classList.remove('active');
+                document.body.style.overflow = '';
             }
         });
     </script>
