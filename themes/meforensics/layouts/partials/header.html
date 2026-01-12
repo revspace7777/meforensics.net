@@ -1,9 +1,9 @@
 <header class="header" id="header">
     <div class="container">
         <div class="header__inner">
-            <a href="/" class="header__logo">
-                <span class="header__logo-icon">ME</span>
-                <span class="header__logo-text">MERTSCHING ENTERPRISES, LLC<br>ENGINEERING SERVICES</span>
+            <a href="{{ .Site.BaseURL }}" class="header__logo">
+                <img src="{{ " images/logo.jpg" | relURL }}" alt="ME Forensics Logo" class="header__logo-image">
+                <span class="header__logo-text">ME Forensics</span>
             </a>
 
             <!-- Mobile Menu Toggle -->

@@ -920,23 +920,28 @@ button {
 }
 
 /* === HEADER LOGO STYLING === */
-.header__logo-icon {
+.header__logo-image {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    text-decoration: none;
+}
+
+.header__logo-text {
     font-family: var(--font-display);
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--color-text-inverse);
-    background: var(--color-primary);
-    padding: 4px 10px;
-    border-radius: var(--radius-md);
-    letter-spacing: -1px;
-    border: 2px solid var(--color-accent);
-    box-shadow: 0 2px 10px rgba(124, 58, 237, 0.3);
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
-    margin-right: -4px;
-    /* Tighten specific to design */
-    z-index: 10;
-    position: relative;
-    transform: skew(-5deg);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    line-height: 1.1;
+    display: block;
+    /* Ensure it wraps if needed, or stays inline */
 }
 
 /* === FOOTER === */
