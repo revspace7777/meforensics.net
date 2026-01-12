@@ -1,6 +1,7 @@
 ---
 title: "Condo Milestone Inspections | ME Forensics"
 description: "Phase 1 and Phase 2 Milestone Inspections for Florida Condominiums in compliance with SB 4D and SB 154."
+layout: "single"
 ---
 
 # Condo Milestone Inspections (SB 4D / SB 154)

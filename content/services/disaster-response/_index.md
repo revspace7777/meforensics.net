@@ -1,6 +1,7 @@
 ---
 title: "Disaster Response & Structural Assessment | ME Forensics"
 description: "Emergency structural assessments following hurricanes, floods, fires, and vehicle impacts. Rapid mobilization across Florida."
+layout: "single"
 ---
 
 # Disaster Response & Structural Assessment
