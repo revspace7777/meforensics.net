@@ -1,0 +1,37 @@
+{{ define "main" }}
+<section class="hero hero--page">
+    <div class="hero__bg">
+        <div class="hero__overlay"></div>
+    </div>
+    <div class="container">
+        <div class="hero__content hero__content--page">
+            <h1 class="hero__title">{{ .Title }}</h1>
+            {{ with .Description }}
+            <p class="hero__subtitle">{{ . }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="grid grid--3">
+            {{ range .Pages }}
+            <div class="service-card">
+                <h3 class="service-card__title">{{ .Title }}</h3>
+                {{ with .Description }}
+                <p class="service-card__text">{{ . }}</p>
+                {{ end }}
+                <a href="{{ .RelPermalink }}" class="service-card__link">
+                    Learn More
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
