@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ME Forensics | Request Engineering Consultation</title>
+    <meta name="description"
+        content="Contact ME Forensics for forensic engineering consultations, milestone inspections, expert witness services, and emergency disaster response throughout Florida.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="home.html" class="header__logo">
+                    <span class="header__logo-text"
+                        style="font-family: 'Brush Script MT', cursive; font-size: 2.5rem; color: #7C3AED;">ME</span>
+                    <span style="font-size: 0.75rem; color: #6B7280;">MERTSCHING ENTERPRISES, LLC<br>ENGINEERING
+                        SERVICES</span>
+                </a>
+
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="home.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="services/forensic-engineering.html"
+                                class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="locations/miami.html" class="nav__link">Locations</a></li>
+                        <li class="nav__item"><a href="resources/legal-compliance/sb4d-guide.html"
+                                class="nav__link">Resources</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    </ul>
+                    <a href="contact.html" class="btn btn--primary">Get Free Consultation</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero hero--page" style="min-height: 40vh;">
+        <div class="hero__bg">
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero__content" style="padding: 6rem 0 4rem;">
+                <h1 class="hero__title">Contact Us</h1>
+                <p class="hero__subtitle">
+                    Ready to discuss your forensic engineering needs? Reach out for a free consultation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+                <!-- Contact Form -->
+                <div>
+                    <h2
+                        style="font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem;">
+                        Request a Consultation</h2>
+                    <p style="color: var(--color-text-secondary); margin-bottom: 2rem;">
+                        Fill out the form below and one of our engineers will contact you within 24 hours
+                        to discuss your project needs.
+                    </p>
+
+                    <form action="#" method="POST" id="contactForm">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company" class="form-label">Company/Organization</label>
+                            <input type="text" id="company" name="company" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceType" class="form-label">Service Type *</label>
+                            <select id="serviceType" name="serviceType" class="form-select" required>
+                                <option value="">Select a service...</option>
+                                <option value="forensic-engineering">Forensic Engineering</option>
+                                <option value="expert-witness">Expert Witness Services</option>
+                                <option value="condo-inspection">Condo Milestone Inspection (SB 4-D)</option>
+                                <option value="disaster-response">Disaster Response</option>
+                                <option value="drone-inspection">Drone/ROV Inspection</option>
+                                <option value="insurance-claims">Insurance Claims Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location" class="form-label">Property Location (City/County)</label>
+                            <input type="text" id="location" name="location" class="form-input"
+                                placeholder="e.g., Miami-Dade County">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Project Details *</label>
+                            <textarea id="message" name="message" class="form-textarea" required
+                                placeholder="Please describe your project or situation..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer;">
+                                <input type="checkbox" name="urgency" style="margin-top: 0.25rem;">
+                                <span style="font-size: 0.875rem; color: var(--color-text-secondary);">
+                                    This is an emergency/urgent situation requiring immediate response
+                                </span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">
+                            Submit Request
+                        </button>
+
+                        <p
+                            style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 1rem; text-align: center;">
+                            By submitting this form, you agree to our privacy policy. We'll never share your
+                            information.
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <div
+                        style="background: linear-gradient(135deg, #2D1B69 0%, #4A3D8A 100%); border-radius: 1rem; padding: 2rem; color: white; margin-bottom: 2rem;">
+                        <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1.5rem;">Emergency Response</h3>
+                        <p style="font-size: 0.875rem; opacity: 0.85; margin-bottom: 1rem;">
+                            For urgent structural emergencies, disaster response, or immediate safety concerns:
+                        </p>
+                        <a href="tel:+18135551234"
+                            style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.5rem; font-weight: 700; color: #F59E0B; margin-bottom: 1rem;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            (813) 555-1234
+                        </a>
+                        <p style="font-size: 0.75rem; opacity: 0.7;">Available 24/7 for emergencies</p>
+                    </div>
+
+                    <div
+                        style="background: var(--color-bg-secondary); border-radius: 1rem; padding: 2rem; margin-bottom: 2rem;">
+                        <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1.5rem;">Contact Information
+                        </h3>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4
+                                style="font-size: 0.875rem; font-weight: 600; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">
+                                Phone</h4>
+                            <a href="tel:+18135551234" style="color: var(--color-accent); font-weight: 500;">(813)
+                                555-1234</a>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4
+                                style="font-size: 0.875rem; font-weight: 600; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">
+                                Email</h4>
+                            <a href="mailto:info@meforensics.net"
+                                style="color: var(--color-accent); font-weight: 500;">info@meforensics.net</a>
+                        </div>
+
+                        <div>
+                            <h4
+                                style="font-size: 0.875rem; font-weight: 600; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">
+                                Headquarters</h4>
+                            <p style="color: var(--color-text-secondary); font-size: 0.9375rem; line-height: 1.6;">
+                                Mertsching Enterprises, LLC<br>
+                                New Port Richey, Florida<br>
+                                (Serving all of Florida)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="background: var(--color-bg-secondary); border-radius: 1rem; padding: 2rem;">
+                        <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Service Areas</h3>
+                        <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
+                            We serve the entire Florida Horseshoe corridor:
+                        </p>
+                        <ul style="list-style: none; font-size: 0.875rem; color: var(--color-text-secondary);">
+                            <li style="padding: 0.25rem 0;">• Southeast: Miami, Fort Lauderdale, West Palm Beach</li>
+                            <li style="padding: 0.25rem 0;">• Central: Orlando, Kissimmee, Lakeland</li>
+                            <li style="padding: 0.25rem 0;">• Tampa Bay: Tampa, St. Petersburg, Clearwater</li>
+                            <li style="padding: 0.25rem 0;">• Southwest: Sarasota, Fort Myers, Naples</li>
+                        </ul>
+                        <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 1rem;">
+                            Also licensed in Georgia, Texas, and other states.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2024 Mertsching Enterprises, LLC. All Rights Reserved.</p>
+                <div class="footer__legal">
+                    <a href="privacy.html" class="footer__legal-link">Privacy Policy</a>
+                    <a href="terms.html" class="footer__legal-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('header--scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+
+</html>
