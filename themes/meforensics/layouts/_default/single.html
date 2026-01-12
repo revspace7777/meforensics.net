@@ -1,0 +1,32 @@
+{{ define "main" }}
+<section class="section">
+    <div class="container">
+        <div class="single-content">
+            <header class="single-content__header">
+                {{ if .Params.category }}
+                <span class="single-content__category">{{ .Params.category }}</span>
+                {{ end }}
+                <h1 class="single-content__title">{{ .Title }}</h1>
+                {{ if .Description }}
+                <p class="single-content__description">{{ .Description }}</p>
+                {{ end }}
+            </header>
+
+            <div class="single-content__body">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-section__content">
+            <h2 class="cta-section__title">Need Expert Engineering Support?</h2>
+            <p class="cta-section__text">Contact our team for a free consultation.</p>
+            <a href="/contact/" class="btn btn--primary btn--lg">Get Started</a>
+        </div>
+    </div>
+</section>
+{{ end }}

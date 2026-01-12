@@ -1,0 +1,64 @@
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="/" class="header__logo">
+                <span class="header__logo-icon">ME</span>
+                <span class="header__logo-text">MERTSCHING ENTERPRISES, LLC<br>ENGINEERING SERVICES</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Mobile Overlay -->
+            <div class="mobile-overlay" id="mobileOverlay"></div>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/" class="nav__link{{ if .IsHome }} nav__link--active{{ end }}">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link nav__link--dropdown">
+                            Services
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </a>
+                        <div class="nav__dropdown">
+                            {{ range $.Site.Data.services.main }}
+                            <a href="/services/{{ .slug }}/" class="nav__dropdown-link">{{ .name }}</a>
+                            {{ end }}
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link nav__link--dropdown">
+                            Locations
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </a>
+                        <div class="nav__dropdown">
+                            <a href="/locations/miami/" class="nav__dropdown-link">Miami / Southeast FL</a>
+                            <a href="/locations/orlando/" class="nav__dropdown-link">Orlando / Central FL</a>
+                            <a href="/locations/tampa/" class="nav__dropdown-link">Tampa Bay / West Coast</a>
+                            <a href="/locations/naples/" class="nav__dropdown-link">Naples / Southwest FL</a>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/resources/" class="nav__link">Resources</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/about/" class="nav__link">About</a>
+                    </li>
+                </ul>
+                <a href="/contact/" class="btn btn--primary">Get Free Consultation</a>
+            </nav>
+        </div>
+    </div>
+</header>

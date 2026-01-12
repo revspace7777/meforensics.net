@@ -1,0 +1,21 @@
+# Hugo build output
+/public/
+
+# Hugo resources cache
+/resources/
+
+# Dependencies (if using npm for assets)
+/node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Content generator script (not needed in production)
+generate_content.py

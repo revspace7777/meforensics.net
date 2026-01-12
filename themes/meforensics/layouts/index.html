@@ -1,0 +1,289 @@
+{{ define "main" }}
+<!-- Hero Section -->
+<section class="hero hero--home">
+    <div class="hero__bg">
+        <div class="hero__overlay"></div>
+    </div>
+
+    <div class="container">
+        <div class="hero__content">
+            <span class="hero__badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                </svg>
+                Women Owned Business Enterprise (WBE)
+            </span>
+
+            <h1 class="hero__title">
+                Disasters Happen—<span class="hero__title-highlight">We're Here to Help</span>
+            </h1>
+
+            <p class="hero__subtitle">
+                Licensed Professional Engineers serving Florida's Horseshoe from Miami to Naples.
+                Structural forensic assessments, expert witness services, condo milestone inspections,
+                and emergency disaster response. Commercial or residential properties.
+            </p>
+
+            <div class="hero__cta">
+                <a href="/contact/" class="btn btn--primary btn--lg">
+                    Request Free Consultation
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+                <a href="tel:{{ .Site.Params.phone }}" class="btn btn--secondary btn--lg">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    Call Now: {{ .Site.Params.phone }}
+                </a>
+            </div>
+
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <div class="trust-badge__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" />
+                        </svg>
+                    </div>
+                    <span class="trust-badge__text">FL Licensed PE</span>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" fill="white" />
+                        </svg>
+                    </div>
+                    <span class="trust-badge__text">FL, GA, TX & More</span>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                        </svg>
+                    </div>
+                    <span class="trust-badge__text">24/7 Emergency Response</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Overview -->
+<section class="section bg-light">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-header__tag">Our Capabilities</span>
+            <h2 class="section-header__title">Comprehensive Forensic Engineering Services</h2>
+            <p class="section-header__text">
+                From structural failure analysis to expert courtroom testimony, we provide
+                end-to-end engineering support for attorneys, insurance companies, HOAs, and property owners.
+            </p>
+        </div>
+
+        <div class="grid grid--3">
+            {{ range .Site.Data.services.main }}
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </div>
+                <h3 class="service-card__title">{{ .name }}</h3>
+                <p class="service-card__text">{{ .description }}</p>
+                <a href="/services/{{ .slug }}/" class="service-card__link">
+                    Learn More
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<!-- Florida Horseshoe Coverage -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-header__tag">Service Coverage</span>
+            <h2 class="section-header__title">The Florida Horseshoe</h2>
+            <p class="section-header__text">
+                From the Southeast coast to Tampa Bay and down to Naples, our engineers respond
+                throughout Florida's most populated corridor. Local expertise, statewide licensing.
+            </p>
+        </div>
+
+        <div class="florida-map">
+            <div class="florida-map__regions">
+                <!-- Southeast Region -->
+                <div class="region-card">
+                    <div class="region-card__header">
+                        <div class="region-card__icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <h3 class="region-card__title">Southeast Florida</h3>
+                    </div>
+                    <ul class="region-card__cities">
+                        {{ range where .Site.Data.cities "region" "southeast" }}
+                        <li class="region-card__city"><a href="/locations/{{ .slug }}/">{{ .name }} →</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+
+                <!-- Central Region -->
+                <div class="region-card">
+                    <div class="region-card__header">
+                        <div class="region-card__icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <h3 class="region-card__title">Central Florida</h3>
+                    </div>
+                    <ul class="region-card__cities">
+                        {{ range where .Site.Data.cities "region" "central" }}
+                        <li class="region-card__city"><a href="/locations/{{ .slug }}/">{{ .name }} →</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+
+                <!-- Tampa Bay Region -->
+                <div class="region-card">
+                    <div class="region-card__header">
+                        <div class="region-card__icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <h3 class="region-card__title">Tampa Bay</h3>
+                    </div>
+                    <ul class="region-card__cities">
+                        {{ range where .Site.Data.cities "region" "west" }}
+                        <li class="region-card__city"><a href="/locations/{{ .slug }}/">{{ .name }} →</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+
+                <!-- Southwest Region -->
+                <div class="region-card">
+                    <div class="region-card__header">
+                        <div class="region-card__icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <h3 class="region-card__title">Southwest Florida</h3>
+                    </div>
+                    <ul class="region-card__cities">
+                        {{ range where .Site.Data.cities "region" "southwest" }}
+                        <li class="region-card__city"><a href="/locations/{{ .slug }}/">{{ .name }} →</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="section" style="background: linear-gradient(135deg, #2D1B69 0%, #4A3D8A 100%);">
+    <div class="container">
+        <div class="stats">
+            <div class="stat">
+                <div class="stat__number" style="color: #F59E0B;">500+</div>
+                <div class="stat__label" style="color: rgba(255,255,255,0.8);">Forensic Assessments</div>
+            </div>
+            <div class="stat">
+                <div class="stat__number" style="color: #F59E0B;">250+</div>
+                <div class="stat__label" style="color: rgba(255,255,255,0.8);">Expert Testimonies</div>
+            </div>
+            <div class="stat">
+                <div class="stat__number" style="color: #F59E0B;">20+</div>
+                <div class="stat__label" style="color: rgba(255,255,255,0.8);">Florida Cities Served</div>
+            </div>
+            <div class="stat">
+                <div class="stat__number" style="color: #F59E0B;">24/7</div>
+                <div class="stat__label" style="color: rgba(255,255,255,0.8);">Emergency Response</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="section">
+    <div class="container">
+        <div class="two-column">
+            <div class="two-column__content">
+                <span class="section-header__tag">Why ME Forensics</span>
+                <h2 class="section-title">"{{ .Site.Params.tagline }}"</h2>
+                <p class="section-text">
+                    ME LLC is here to help. As a Women Owned Business Enterprise (WBE), we bring a unique
+                    perspective to forensic engineering—combining technical excellence with genuine care for our
+                    clients.
+                </p>
+
+                <ul class="check-list">
+                    <li>Licensed Professional Engineers in Florida, Georgia, Texas, and other states</li>
+                    <li>Aerial and underwater drone documentation capabilities</li>
+                    <li>Rapid response team for disaster and emergency situations</li>
+                    <li>Detailed engineering reports for construction, repairs, and permitting</li>
+                </ul>
+
+                <a href="/about/" class="btn btn--outline">Learn About Our Team</a>
+            </div>
+
+            <div class="two-column__sidebar">
+                <div class="emergency-card">
+                    <h3>Disaster Response Hotline</h3>
+                    <p>Flood, storm, water leaks, wind, hurricane, hail, lightning, tree impact, vehicle impact,
+                        fire—we're ready.</p>
+                    <a href="tel:{{ .Site.Params.phone }}" class="emergency-card__phone">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        {{ .Site.Params.phone }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-section__content">
+            <h2 class="cta-section__title">Ready to Get Started?</h2>
+            <p class="cta-section__text">
+                Whether you need a forensic assessment, expert witness for litigation, or emergency
+                disaster response, our team is ready to help. Contact us for a free consultation.
+            </p>
+            <div class="cta-section__buttons">
+                <a href="/contact/" class="btn btn--primary btn--lg">Request Free Consultation</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

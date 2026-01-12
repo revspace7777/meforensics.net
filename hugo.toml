@@ -1,0 +1,50 @@
+baseURL = "https://meforensics.net/"
+languageCode = "en-us"
+title = "ME Forensics | Florida Structural & Forensic Engineering"
+theme = "meforensics"
+
+[params]
+  description = "Licensed Professional Engineers providing forensic assessments, expert witness services, and disaster response across Florida's Horseshoe from Miami to Naples."
+  phone = "(813) 555-1234"
+  email = "info@meforensics.net"
+  tagline = "It Is Not About ME, It Is About YOU"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Services"
+    url = "/services/"
+    weight = 2
+  [[menu.main]]
+    name = "Locations"
+    url = "/locations/"
+    weight = 3
+  [[menu.main]]
+    name = "Resources"
+    url = "/resources/"
+    weight = 4
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 5
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
+
+[taxonomies]
+  region = "regions"
+  service = "services"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

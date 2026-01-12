@@ -1,0 +1,144 @@
+{{ define "main" }}
+{{ $city := .Params }}
+{{ $cityData := index (where .Site.Data.cities "slug" .Params.city_slug) 0 }}
+{{ $services := index .Site.Data.services $cityData.suite }}
+
+<!-- Hero Section -->
+<section class="hero hero--page">
+    <div class="hero__bg">
+        <div class="hero__overlay"></div>
+    </div>
+    <div class="container">
+        <div class="hero__content hero__content--page">
+            <nav class="breadcrumbs">
+                <a href="/">Home</a>
+                <span class="breadcrumbs__separator">/</span>
+                <a href="/locations/">Locations</a>
+                <span class="breadcrumbs__separator">/</span>
+                <span class="breadcrumbs__current">{{ $cityData.name }}</span>
+            </nav>
+
+            <span class="hero__badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" fill="white" />
+                </svg>
+                {{ $cityData.region_name }} Hub
+            </span>
+
+            <h1 class="hero__title">{{ $cityData.name }} Forensic Engineering <span
+                    class="hero__title-highlight">Services</span></h1>
+            <p class="hero__subtitle">
+                Expert structural assessments, condo milestone inspections, and disaster response for
+                {{ delimit $cityData.counties " and " }}.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Location Overview -->
+<section class="section">
+    <div class="container">
+        <div class="two-column-layout">
+            <div class="two-column-layout__main">
+                <h2 class="section-title">Forensic Engineering in {{ $cityData.name }} & {{ $cityData.region_name }}
+                </h2>
+
+                <p class="section-text">{{ $cityData.description }}</p>
+
+                {{ if eq $cityData.suite "coastal" }}
+                <p class="section-text">
+                    Our coastal engineering expertise addresses the unique challenges of Florida's waterfront
+                    communities,
+                    including salt air corrosion, hurricane damage, and flood vs. wind determinations for insurance
+                    claims.
+                </p>
+                {{ else }}
+                <p class="section-text">
+                    Central Florida properties face different challenges including sinkhole activity, foundation issues,
+                    and construction defects. Our engineers have deep experience with inland structural forensics.
+                </p>
+                {{ end }}
+
+                <!-- Services Grid -->
+                <h3 class="subsection-title">Services Available in {{ $cityData.name }}</h3>
+
+                <div class="grid grid--2">
+                    {{ range $services }}
+                    <div class="service-card service-card--compact">
+                        <h4 class="service-card__title">{{ .name }}</h4>
+                        <p class="service-card__text">{{ .description }}</p>
+                        <a href="/locations/{{ $cityData.slug }}/{{ .slug }}/" class="service-card__link">Learn More
+                            →</a>
+                    </div>
+                    {{ end }}
+
+                    {{ if $cityData.special }}
+                    <div class="service-card service-card--highlight">
+                        <span class="service-card__tag">High Value Niche</span>
+                        <h4 class="service-card__title">{{ $cityData.special }}</h4>
+                        <p class="service-card__text">Specialized service for {{ $cityData.name }} area properties.</p>
+                        <a href="/contact/" class="service-card__link">Get Quote →</a>
+                    </div>
+                    {{ end }}
+                </div>
+
+                <!-- Why Choose Local -->
+                <div class="info-box">
+                    <h3 class="info-box__title">Why Choose Local Expertise?</h3>
+                    <ul class="check-list">
+                        <li>Deep understanding of {{ delimit $cityData.counties " and " }} building codes</li>
+                        {{ if eq $cityData.suite "coastal" }}
+                        <li>Experience with coastal environment challenges: salt air, hurricanes, flooding</li>
+                        {{ else }}
+                        <li>Experience with Central Florida challenges: sinkholes, foundation issues</li>
+                        {{ end }}
+                        <li>Rapid response times throughout {{ $cityData.region_name }}</li>
+                        <li>Established relationships with local attorneys, adjusters, and contractors</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="two-column-layout__sidebar">
+                <div class="sidebar-card sidebar-card--cta">
+                    <h3 class="sidebar-card__title">Request {{ $cityData.name }} Consultation</h3>
+                    <a href="/contact/" class="btn btn--primary btn--block">Schedule Assessment</a>
+                    <a href="tel:{{ .Site.Params.phone }}" class="btn btn--outline btn--block">{{ .Site.Params.phone
+                        }}</a>
+                </div>
+
+                <div class="sidebar-card sidebar-card--primary">
+                    <h3 class="sidebar-card__title">Service Area</h3>
+                    <p class="sidebar-card__text">{{ delimit $cityData.counties " • " }}</p>
+                    <h4 class="sidebar-card__subtitle">Cities Served:</h4>
+                    <p class="sidebar-card__cities">{{ delimit $cityData.cities_served ", " }}</p>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3 class="sidebar-card__title">Other Locations</h3>
+                    <ul class="sidebar-list">
+                        {{ range first 4 (shuffle (where .Site.Data.cities "slug" "!=" $cityData.slug)) }}
+                        <li><a href="/locations/{{ .slug }}/">{{ .name }} →</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-section__content">
+            <h2 class="cta-section__title">Ready for Your {{ $cityData.name }} Engineering Assessment?</h2>
+            <p class="cta-section__text">
+                From milestone inspections to insurance claims support, our {{ $cityData.name }}-based engineers are
+                ready to help.
+            </p>
+            <a href="/contact/" class="btn btn--primary btn--lg">Schedule Your Assessment</a>
+        </div>
+    </div>
+</section>
+{{ end }}

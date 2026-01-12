@@ -1,0 +1,206 @@
+# City data for Florida Horseshoe strategy
+# Each city has a URL slug, full name, region, counties served, and available services
+
+# Southeast Florida
+- slug: miami
+  name: Miami
+  region: southeast
+  region_name: Southeast Florida
+  counties: ["Miami-Dade County", "Broward County"]
+  suite: coastal
+  special: "High-Rise Recertification"
+  cities_served: ["Miami Beach", "Coral Gables", "Hialeah", "Homestead", "Doral", "Kendall"]
+  description: "Miami's unique coastal environment presents distinct challenges for structural engineering. From high-rise condominium recertification requirements to hurricane damage assessment, our licensed professional engineers understand the specific needs of Southeast Florida properties."
+
+- slug: fort-lauderdale
+  name: Fort Lauderdale
+  region: southeast
+  region_name: Southeast Florida
+  counties: ["Broward County"]
+  suite: coastal
+  special: "Concrete Spalling Repair"
+  cities_served: ["Hollywood", "Pompano Beach", "Deerfield Beach", "Plantation", "Weston"]
+  description: "Fort Lauderdale's waterfront properties and aging condo inventory require specialized forensic engineering expertise. We provide milestone inspections, structural assessments, and expert witness services throughout Broward County."
+
+- slug: west-palm-beach
+  name: West Palm Beach
+  region: southeast
+  region_name: Southeast Florida
+  counties: ["Palm Beach County"]
+  suite: coastal
+  special: "Historic Structure Analysis"
+  cities_served: ["Palm Beach", "Jupiter", "Wellington", "Royal Palm Beach", "Palm Beach Gardens"]
+  description: "West Palm Beach combines historic Florida architecture with modern high-rises. Our engineers specialize in both historic preservation assessments and contemporary structural forensics."
+
+- slug: boca-raton
+  name: Boca Raton
+  region: southeast
+  region_name: Southeast Florida
+  counties: ["Palm Beach County"]
+  suite: coastal
+  special: "Luxury Condo Inspections"
+  cities_served: ["Delray Beach", "Boynton Beach", "Highland Beach"]
+  description: "Boca Raton's luxury condominium market demands the highest quality forensic engineering services. We provide comprehensive milestone inspections and structural assessments for high-value properties."
+
+- slug: hialeah
+  name: Hialeah
+  region: southeast
+  region_name: Southeast Florida
+  counties: ["Miami-Dade County"]
+  suite: coastal
+  special: "Commercial Claims Support"
+  cities_served: ["Hialeah Gardens", "Miami Lakes", "Opa-locka"]
+  description: "Hialeah's dense commercial and residential properties require experienced forensic engineers familiar with Miami-Dade building codes and inspection requirements."
+
+# Central Florida
+- slug: orlando
+  name: Orlando
+  region: central
+  region_name: Central Florida
+  counties: ["Orange County", "Seminole County"]
+  suite: inland
+  special: "Theme Park Structure Analysis"
+  cities_served: ["Winter Park", "Kissimmee", "Ocoee", "Apopka", "Maitland"]
+  description: "Orlando's unique mix of theme parks, resorts, and residential communities requires diverse forensic engineering expertise. We specialize in commercial structures, sinkhole investigations, and construction defect analysis."
+
+- slug: kissimmee
+  name: Kissimmee
+  region: central
+  region_name: Central Florida
+  counties: ["Osceola County"]
+  suite: inland
+  special: "Resort & Hotel Engineering"
+  cities_served: ["St. Cloud", "Celebration", "Poinciana"]
+  description: "Kissimmee's resort and vacation rental market requires specialized forensic engineering for hospitality properties. We provide structural assessments and expert witness services for the tourism corridor."
+
+- slug: winter-park
+  name: Winter Park
+  region: central
+  region_name: Central Florida
+  counties: ["Orange County"]
+  suite: inland
+  special: "Residential Forensics"
+  cities_served: ["Maitland", "Casselberry", "Altamonte Springs"]
+  description: "Winter Park's established residential neighborhoods and historic properties require careful forensic analysis. We specialize in residential structural assessments and construction defect investigations."
+
+- slug: lakeland
+  name: Lakeland
+  region: central
+  region_name: Central Florida
+  counties: ["Polk County"]
+  suite: inland
+  special: "Sinkhole Investigations"
+  cities_served: ["Winter Haven", "Auburndale", "Bartow", "Plant City"]
+  description: "Lakeland sits in Florida's sinkhole corridor. Our engineers specialize in sinkhole investigation, foundation analysis, and structural repair assessment for properties affected by ground subsidence."
+
+- slug: altamonte-springs
+  name: Altamonte Springs
+  region: central
+  region_name: Central Florida
+  counties: ["Seminole County"]
+  suite: inland
+  special: null
+  cities_served: ["Casselberry", "Longwood", "Lake Mary"]
+  description: "Altamonte Springs and the Seminole County area feature a mix of commercial and residential properties requiring diverse forensic engineering services."
+
+# Tampa Bay (West Coast)
+- slug: tampa
+  name: Tampa
+  region: west
+  region_name: Tampa Bay
+  counties: ["Hillsborough County"]
+  suite: coastal
+  special: "Commercial Roof Consulting"
+  cities_served: ["Brandon", "Temple Terrace", "Plant City", "Riverview"]
+  description: "Tampa's commercial corridor and coastal properties require experienced forensic engineers familiar with hurricane damage, flood analysis, and commercial construction standards."
+
+- slug: st-petersburg
+  name: St. Petersburg
+  region: west
+  region_name: Tampa Bay
+  counties: ["Pinellas County"]
+  suite: coastal
+  special: "Old Northeast Foundation Repair"
+  cities_served: ["Gulfport", "Treasure Island", "St. Pete Beach", "Pinellas Park"]
+  description: "St. Petersburg's historic neighborhoods and waterfront properties require specialized forensic engineering expertise. We provide foundation assessments, seawall inspections, and structural analysis."
+
+- slug: clearwater
+  name: Clearwater
+  region: west
+  region_name: Tampa Bay
+  counties: ["Pinellas County"]
+  suite: coastal
+  special: "Institutional Property"
+  cities_served: ["Dunedin", "Safety Harbor", "Palm Harbor", "Largo"]
+  description: "Clearwater's diverse property portfolio includes beachfront condos, commercial buildings, and institutional facilities. Our forensic engineers provide comprehensive structural assessments."
+
+- slug: new-port-richey
+  name: New Port Richey
+  region: west
+  region_name: Tampa Bay
+  counties: ["Pasco County"]
+  suite: coastal
+  special: "Pasco Flood Engineering"
+  description: "New Port Richey and Pasco County face unique flood challenges. Our engineers specialize in flood damage assessment, elevation certificates, and structural analysis for affected properties."
+  cities_served: ["Port Richey", "Holiday", "Hudson", "Trinity"]
+
+- slug: brandon
+  name: Brandon
+  region: west
+  region_name: Tampa Bay
+  counties: ["Hillsborough County"]
+  suite: inland
+  special: null
+  cities_served: ["Valrico", "Riverview", "Lithia"]
+  description: "Brandon and the eastern Hillsborough corridor feature a growing mix of residential and commercial properties requiring comprehensive forensic engineering services."
+
+# Southwest Florida
+- slug: sarasota
+  name: Sarasota
+  region: southwest
+  region_name: Southwest Florida
+  counties: ["Sarasota County"]
+  suite: coastal
+  special: "Luxury Waterfront Forensics"
+  cities_served: ["Venice", "Bradenton", "Siesta Key", "Longboat Key"]
+  description: "Sarasota's luxury waterfront properties and barrier island communities require expert forensic engineering for coastal structures, seawalls, and high-value residences."
+
+- slug: fort-myers
+  name: Fort Myers
+  region: southwest
+  region_name: Southwest Florida
+  counties: ["Lee County"]
+  suite: coastal
+  special: "Hurricane Ian Recovery"
+  cities_served: ["Cape Coral", "Bonita Springs", "Estero", "Sanibel", "Fort Myers Beach"]
+  description: "Fort Myers and Lee County continue to recover from Hurricane Ian. Our forensic engineers specialize in hurricane damage assessment, insurance claims support, and structural repair evaluation."
+
+- slug: naples
+  name: Naples
+  region: southwest
+  region_name: Southwest Florida
+  counties: ["Collier County"]
+  suite: coastal
+  special: "High-Net-Worth Claims"
+  cities_served: ["Marco Island", "Bonita Springs", "Immokalee", "Everglades City"]
+  description: "Naples' luxury real estate market demands the highest quality forensic engineering services. We provide expert structural assessments and litigation support for high-value property claims."
+
+- slug: cape-coral
+  name: Cape Coral
+  region: southwest
+  region_name: Southwest Florida
+  counties: ["Lee County"]
+  suite: coastal
+  special: "Canal Wall Failure (Drone)"
+  cities_served: ["North Fort Myers", "Pine Island"]
+  description: "Cape Coral's extensive canal system creates unique structural challenges. Our engineers specialize in seawall inspections, canal wall failure analysis, and underwater drone assessments."
+
+- slug: marco-island
+  name: Marco Island
+  region: southwest
+  region_name: Southwest Florida
+  counties: ["Collier County"]
+  suite: coastal
+  special: "Windstorm Analysis"
+  cities_served: ["Goodland", "Isle of Capri"]
+  description: "Marco Island's barrier island location exposes properties to significant wind and storm surge risks. We provide windstorm damage analysis and coastal structure assessments."

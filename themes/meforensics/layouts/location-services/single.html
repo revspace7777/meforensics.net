@@ -1,0 +1,113 @@
+{{ define "main" }}
+{{ $citySlug := .Params.city_slug }}
+{{ $serviceSlug := .Params.service_slug }}
+{{ $cityData := index (where .Site.Data.cities "slug" $citySlug) 0 }}
+
+<!-- Get service data -->
+{{ $services := index .Site.Data.services $cityData.suite }}
+{{ $serviceData := index (where $services "slug" $serviceSlug) 0 }}
+
+<!-- Hero Section -->
+<section class="hero hero--page">
+    <div class="hero__bg">
+        <div class="hero__overlay"></div>
+    </div>
+    <div class="container">
+        <div class="hero__content hero__content--page">
+            <nav class="breadcrumbs">
+                <a href="/">Home</a>
+                <span class="breadcrumbs__separator">/</span>
+                <a href="/locations/">Locations</a>
+                <span class="breadcrumbs__separator">/</span>
+                <a href="/locations/{{ $cityData.slug }}/">{{ $cityData.name }}</a>
+                <span class="breadcrumbs__separator">/</span>
+                <span class="breadcrumbs__current">{{ $serviceData.short_name }}</span>
+            </nav>
+
+            <span class="hero__badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" fill="white" />
+                </svg>
+                {{ $cityData.name }} Service
+            </span>
+
+            <h1 class="hero__title">{{ $cityData.name }} <span class="hero__title-highlight">{{ $serviceData.short_name
+                    }}</span></h1>
+            <p class="hero__subtitle">{{ $serviceData.description }}</p>
+        </div>
+    </div>
+</section>
+
+<!-- Service Content -->
+<section class="section">
+    <div class="container">
+        <div class="two-column-layout">
+            <div class="two-column-layout__main">
+                <h2 class="section-title">{{ $serviceData.name }} in {{ $cityData.name }}</h2>
+
+                <p class="section-text">
+                    {{ $cityData.name }} property owners and managers trust ME Forensics for {{ lower $serviceData.name
+                    }}.
+                    Our licensed professional engineers combine local expertise with advanced technology to deliver
+                    comprehensive assessments and reports.
+                </p>
+
+                <p class="section-text">{{ $cityData.description }}</p>
+
+                <h3 class="subsection-title">What We Provide</h3>
+                <ul class="check-list">
+                    <li>Comprehensive on-site inspection and documentation</li>
+                    <li>Advanced technology including drone and thermal imaging</li>
+                    <li>Detailed engineering reports suitable for insurance claims and litigation</li>
+                    <li>Expert witness testimony if needed</li>
+                    <li>Repair recommendations and cost estimates</li>
+                </ul>
+
+                <h3 class="subsection-title">Serving {{ delimit $cityData.counties " and " }}</h3>
+                <p class="section-text">
+                    We provide {{ lower $serviceData.name }} throughout {{ $cityData.name }} and surrounding areas
+                    including
+                    {{ delimit $cityData.cities_served ", " }}.
+                </p>
+
+                <div class="inline-cta">
+                    <h3>Ready to Get Started?</h3>
+                    <p>Contact us today for a free consultation about your {{ $cityData.name }} property.</p>
+                    <a href="/contact/" class="btn btn--primary">Request Quote</a>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="two-column-layout__sidebar">
+                <div class="sidebar-card sidebar-card--cta">
+                    <h3 class="sidebar-card__title">Request Service</h3>
+                    <a href="/contact/" class="btn btn--primary btn--block">Schedule Assessment</a>
+                    <a href="tel:{{ .Site.Params.phone }}" class="btn btn--outline btn--block">{{ .Site.Params.phone
+                        }}</a>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3 class="sidebar-card__title">Other {{ $cityData.name }} Services</h3>
+                    <ul class="sidebar-list">
+                        {{ range $services }}
+                        {{ if ne .slug $serviceSlug }}
+                        <li><a href="/locations/{{ $cityData.slug }}/{{ .slug }}/">{{ .short_name }} →</a></li>
+                        {{ end }}
+                        {{ end }}
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3 class="sidebar-card__title">Other Cities</h3>
+                    <ul class="sidebar-list">
+                        {{ range first 4 (where .Site.Data.cities "slug" "!=" $cityData.slug) }}
+                        <li><a href="/locations/{{ .slug }}/">{{ .name }} →</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

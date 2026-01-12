@@ -1,0 +1,120 @@
+# Service definitions for ME Forensics
+# coastal = services for coastal cities
+# inland = services for inland cities
+
+coastal:
+  - slug: structural-forensic-assessment
+    name: Structural Forensic Assessment
+    short_name: Structural
+    description: "Complete structural evaluation and failure analysis for commercial and residential properties."
+    icon: building
+  
+  - slug: condo-milestone-inspection
+    name: Condo Milestone Inspection (SB 4-D)
+    short_name: Milestone
+    description: "Florida's mandatory structural inspections for buildings 3+ stories and 30+ years old."
+    icon: clipboard-check
+  
+  - slug: expert-witness
+    name: Expert Witness Services
+    short_name: Expert Witness
+    description: "Daubert-qualified testimony for construction defect, premises liability, and insurance disputes."
+    icon: scale
+  
+  - slug: flood-wind-claims
+    name: Flood vs. Wind Damage Claims
+    short_name: Flood vs Wind
+    description: "Independent engineering analysis to determine cause of damage for insurance claims."
+    icon: cloud-rain
+  
+  - slug: seawall-marine-inspection
+    name: Seawall & Marine Inspection
+    short_name: Seawall/Marine
+    description: "Underwater ROV inspections for seawalls, docks, and waterfront structures."
+    icon: anchor
+
+inland:
+  - slug: structural-forensic-assessment
+    name: Structural Forensic Assessment
+    short_name: Structural
+    description: "Complete structural evaluation and failure analysis for commercial and residential properties."
+    icon: building
+  
+  - slug: expert-witness
+    name: Expert Witness Services
+    short_name: Expert Witness
+    description: "Daubert-qualified testimony for construction defect, premises liability, and insurance disputes."
+    icon: scale
+  
+  - slug: roof-damage-assessment
+    name: Roof Damage Assessment
+    short_name: Roof Damage
+    description: "Comprehensive roof inspection and damage documentation using drone technology."
+    icon: home
+  
+  - slug: sinkhole-foundation
+    name: Sinkhole & Foundation Analysis
+    short_name: Sinkhole
+    description: "Ground subsidence investigation and foundation stability assessment."
+    icon: layers
+  
+  - slug: construction-defect
+    name: Construction Defect Claims
+    short_name: Construction Defect
+    description: "Expert analysis of construction deficiencies and code compliance issues."
+    icon: alert-triangle
+
+# Main service pages (silos)
+main:
+  - slug: forensic-engineering
+    name: Forensic Engineering
+    description: "Comprehensive structural failure analysis, origin & cause investigations, and engineering assessments."
+    subpages:
+      - slug: structural-failure-analysis
+        name: Structural Failure Analysis
+      - slug: origin-cause
+        name: Origin & Cause Investigation
+      - slug: fire-damage-assessment
+        name: Fire Damage Structural Assessment
+      - slug: vehicle-impact
+        name: Vehicle Impact Analysis
+  
+  - slug: expert-witness
+    name: Expert Witness & Legal
+    description: "Daubert-qualified expert witness testimony and litigation support services."
+    subpages:
+      - slug: construction-defect-witness
+        name: Construction Defect Witness
+      - slug: premises-liability
+        name: Premises Liability (Trip & Fall)
+      - slug: insurance-umpire
+        name: Insurance Appraisal Umpire
+  
+  - slug: condo-hoa-inspections
+    name: Condo & HOA (SB 4-D)
+    description: "Florida Senate Bill 4-D milestone inspections and structural integrity compliance."
+    subpages:
+      - slug: milestone-inspections
+        name: Milestone Inspections
+      - slug: sirs-reserve-studies
+        name: SIRS Reserve Studies
+      - slug: turnover-reports
+        name: Turnover Reports
+  
+  - slug: disaster-response
+    name: Disaster Response
+    description: "24/7 emergency response for hurricane damage, flooding, and structural emergencies."
+    subpages:
+      - slug: hurricane-damage
+        name: Hurricane Damage Assessment
+      - slug: wind-flood-determination
+        name: Wind vs. Flood Determination
+  
+  - slug: drone-inspections
+    name: Advanced Tech / Drones
+    description: "Aerial and underwater drone inspections for hard-to-reach structures."
+    subpages:
+      - slug: underwater-drone
+        name: Underwater Drone Inspections
+      - slug: aerial-roof-inspections
+        name: Aerial Drone Roof Inspections
