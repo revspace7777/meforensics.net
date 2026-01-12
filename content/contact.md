@@ -4,6 +4,9 @@ description: "Get in touch with ME Forensics for structural inspections, forensi
 ---
 
 # Contact ME Forensics
+<div style="text-align: center; margin-bottom: 2rem;">
+  <img src="/images/logo.png" alt="ME Forensics Logo" style="max-width: 200px;">
+</div>
 
 Whether you need a Condo Milestone Inspection in Miami, a wind damage assessment in Tampa, or an expert witness for a complex litigation case, our team is ready to deploy.
 
