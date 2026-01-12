@@ -1,6 +1,7 @@
 ---
 title: "Miami Condo Milestone Inspections | ME Forensics"
 description: "Phase 1 & Phase 2 Milestone Inspections for Miami condominiums. Compliance with Florida SB 4D for buildings near the coastline."
+city_slug: "miami"
 ---
 
 # Miami Condo Milestone Inspections

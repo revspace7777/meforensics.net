@@ -1,6 +1,7 @@
 ---
 title: "Miami Seawall & Marine Inspections | ME Forensics"
 description: "Marine infrastructure inspections in Miami. Evaluating seawalls, docks, and piers in Biscayne Bay and canal systems."
+city_slug: "miami"
 ---
 
 # Seawall & Marine Inspections in Miami

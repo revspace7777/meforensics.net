@@ -1,6 +1,7 @@
 ---
 title: "Miami Flood vs. Wind Damage | ME Forensics"
 description: "Forensic engineering determinations for Flood vs. Wind claims in Miami. Differentiating storm surge damage from hurricane wind uplift."
+city_slug: "miami"
 ---
 
 # Miami Flood vs. Wind Determinations

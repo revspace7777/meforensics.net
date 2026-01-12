@@ -1,6 +1,7 @@
 ---
 title: "Miami Structural Expert Witness | ME Forensics"
 description: "Structural engineering expert witness services for Miami legal cases. Construction defects, insurance denials, and liability claims."
+city_slug: "miami"
 ---
 
 # Structural Expert Witness Services in Miami

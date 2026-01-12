@@ -1,6 +1,7 @@
 ---
 title: "Miami Structural Forensic Assessment | ME Forensics"
 description: "Comprehensive structural assessments for Miami residential and commercial properties. Foundation settlement, cracking, and load analysis."
+city_slug: "miami"
 ---
 
 # Miami Structural Forensic Assessments
