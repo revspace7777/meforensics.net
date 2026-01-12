@@ -1,24 +1,33 @@
 ---
-title: "Disaster Response"
-description: "Professional disaster response services from ME Forensics. Licensed engineers serving all of Florida."
+title: "Disaster Response & Structural Assessment | ME Forensics"
+description: "Emergency structural assessments following hurricanes, floods, fires, and vehicle impacts. Rapid mobilization across Florida."
 ---
 
-# Disaster Response
+# Disaster Response & Structural Assessment
 
-ME Forensics provides comprehensive disaster response services throughout Florida's Horseshoe corridor.
+## Rapid Response When it Matters Most
 
-## Our Approach
+When disaster strikes—whether it's a hurricane, fire, or vehicle impact—time is of the essence. Property owners and insurers need immediate answers: *Is the structure safe? Is it salvageable?*
 
-Our licensed professional engineers bring decades of experience to every project. We combine thorough investigation with advanced technology to deliver accurate, defensible findings.
+ME Forensics provides 24/7 emergency response services to assess structural stability and secure dangerous sites.
 
-## Why Choose ME Forensics
+## Our Services Include
 
-- Licensed Professional Engineers (FL, GA, TX)
-- Women Owned Business Enterprise (WBE)
-- 24/7 Emergency Response Available
-- Detailed Reports for Insurance & Litigation
-- Advanced Drone & ROV Technology
+### Post-Hurricane Evaluation
+*   **Wind vs. Flood Determination:** Differentiating damage caused by high winds (racking, uplift) from damage caused by storm surge or rising water.
+*   **Roof Integrity:** assessingshingles, tiles, and metal roofing systems for storm-created openings.
 
-## Contact Us
+### Fire Damage Assessment
+*   Evaluation of structural framing (trusses, beams, columns) after fire exposure.
+*   Determination of char depth and remaining load capacity.
 
-Ready to discuss your project? Contact us for a free consultation.
+### Vehicle Impact
+*   Immediate shoring recommendations.
+*   Assessment of impact force transfer to foundations and adjacent walls.
+
+### Sinkhole & Settlement
+*   Investigation of foundation fractures and step-cracking in masonry.
+*   Floor elevation surveys to map differential settlement.
+
+## "Safe to Occupy" Determinations
+We assist municipalities and building owners by conducting immediate safety evaluations to tag structures as Safe, Restricted Use, or Unsafe.

@@ -1,24 +1,34 @@
 ---
-title: "Forensic Engineering"
-description: "Professional forensic engineering services from ME Forensics. Licensed engineers serving all of Florida."
+title: "Forensic Engineering Services | ME Forensics"
+description: "Professional forensic engineering services for identifying cause and origin of structural failures, water intrusion, and building envelope defects in Florida."
 ---
 
-# Forensic Engineering
+# Forensic Engineering & Cause of Origin Investigation
 
-ME Forensics provides comprehensive forensic engineering services throughout Florida's Horseshoe corridor.
+## The Science of Structural Failure
 
-## Our Approach
+Forensic engineering is not just about identifying damage—it is about determining the *when*, *how*, and *why* of a structural failure. At ME Forensics, we apply rigorous engineering principles to investigate property damage, providing unbiased, scientifically defensible conclusions that stand up to scrutiny.
 
-Our licensed professional engineers bring decades of experience to every project. We combine thorough investigation with advanced technology to deliver accurate, defensible findings.
+## Our Forensic Methodology
 
-## Why Choose ME Forensics
+We follow a systematic protocol for every investigation, ensuring consistency and reliability:
 
-- Licensed Professional Engineers (FL, GA, TX)
-- Women Owned Business Enterprise (WBE)
-- 24/7 Emergency Response Available
-- Detailed Reports for Insurance & Litigation
-- Advanced Drone & ROV Technology
+1.  **Site Inspection:** Detailed visual examination and photographic documentation of the loss location.
+2.  **fact Gathering:** Review of weather data, maintenance records, and construction documents.
+3.  **Non-Destructive Testing (NDT):** Utilization of thermal imaging, moisture meters, and floor elevation surveys to gather data without causing further damage.
+4.  **Analysis:** application of engineering mechanics and code requirements to the observed conditions.
+5.  **Reporting:** Production of a clear, concise, and sealed engineering report outlining findings, conclusions, and recommendations.
 
-## Contact Us
+## Common Investigations
 
-Ready to discuss your project? Contact us for a free consultation.
+*   **Roof Damage Assessment:** Distinguishing between acute wind/hail damage and long-term wear/tear or installation errors.
+*   **Water Intrusion:** Tracing leak pathways through building envelopes, stucco, windows, and roofs.
+*   **Structural Settlement:** Differential foundation movement analysis using floor level surveys and soil conceptual models.
+*   **Construction Defects:** Identifying deviations from the Florida Building Code and approved plans.
+*   **Fire & Impact Damage:** Assessing structural integrity after vehicular impact or fire events.
+
+## Who We Serve
+
+*   **Insurance Carriers:** providing prompt, accurate Cause & Origin reports.
+*   **Attorneys:** Delivering expert opinions for construction litigation.
+*   **Property Owners/HOAs:** Helping stakeholders understand the true condition of their assets.

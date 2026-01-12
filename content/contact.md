@@ -1,30 +1,65 @@
 ---
-title: "Contact Us"
-description: "Contact ME Forensics for forensic engineering consultations, milestone inspections, and emergency disaster response throughout Florida."
+title: "Contact Us | ME Forensics"
+description: "Get in touch with ME Forensics for structural inspections, forensic engineering, and expert witness services. Call (904) 903-8075."
 ---
 
-# Contact Us
+# Contact ME Forensics
 
-Ready to discuss your forensic engineering needs? We're here to help.
+Whether you need a Condo Milestone Inspection in Miami, a wind damage assessment in Tampa, or an expert witness for a complex litigation case, our team is ready to deploy.
+
+## Direct Contact
+
+**Principal:** Theresa Mertsching, P.E.
+
+*   **Phone:** <a href="tel:9049038075">(904) 903-8075</a>
+*   **Email:** <a href="mailto:theresa@meforensics.com">theresa@meforensics.com</a>
+
+## Hours of Operation
+
+*   **Monday - Friday:** 9:00 AM – 5:00 PM
+*   **Saturday - Sunday:** Closed (Emergency assessments available by appointment)
+
+## Mailing Address
+
+**Mertsching Enterprises, LLC**
+4525 Heron Landing
+New Port Richey, FL 34652
 
 ## Request a Consultation
 
-Fill out our contact form or call us directly. We respond to all inquiries within 24 hours.
+Please use the form below to provide preliminary details about your project. For insurance claims, please include the date of loss and claim number if available.
 
-**Phone:** (813) 555-1234
+<form name="contact" method="POST" data-netlify="true" action="/thank-you">
+  <div class="form-group">
+    <label for="name">Name *</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  
+  <div class="form-group">
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" required>
+  </div>
 
-**Email:** info@meforensics.net
+  <div class="form-group">
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone">
+  </div>
 
-**Headquarters:**
-Mertsching Enterprises, LLC
-New Port Richey, Florida
+  <div class="form-group">
+    <label for="service">Service Needed</label>
+    <select id="service" name="service">
+        <option value="General Inquiry">General Inquiry</option>
+        <option value="Milestone Inspection">Condo Milestone Inspection</option>
+        <option value="Forensic Engineering">Forensic Engineering / Cause & Origin</option>
+        <option value="Expert Witness">Expert Witness / Litigation Support</option>
+        <option value="Structural Assessment">Structural Assessment</option>
+    </select>
+  </div>
 
-## Emergency Response
+  <div class="form-group">
+    <label for="message">Message / Project Details *</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+  </div>
 
-For urgent structural emergencies or disaster response, call our 24/7 hotline:
-
-**(813) 555-1234**
-
-## Service Areas
-
-We serve all of Florida's Horseshoe corridor including Miami-Dade, Broward, Palm Beach, Orange, Hillsborough, Pinellas, Lee, and Collier counties.
+  <button type="submit" class="btn btn-primary">Send Inquiry</button>
+</form>
